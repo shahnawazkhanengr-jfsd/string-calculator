@@ -13,7 +13,7 @@ public class StringCalculation {
     }
 
     private int splitValues(String strNumber) {
-        String [] splitValues = strNumber.split(",");
+        String [] splitValues = strNumber.split("[,\n]");
         int sum = 0;
         for(String strNum : splitValues) {
             sum += Integer.parseInt(strNum);
