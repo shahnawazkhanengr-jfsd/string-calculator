@@ -12,5 +12,6 @@ class StringCalculationTest {
         assertEquals(6, stringCalculation.add("1,5"));
         assertEquals(6, stringCalculation.add("1\n2,3"));
         assertEquals(3, stringCalculation.add("//;\n1;2"));
+        assertEquals("negative numbers not allowed", stringCalculation.negativeValueException("//;\n-1;-2").getMessage());
     }
 }
