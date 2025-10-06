@@ -8,5 +8,7 @@ class StringCalculationTest {
     void add() {
         StringCalculation stringCalculation = new StringCalculation();
         assertEquals(0, stringCalculation.add(""));
+        assertEquals(1, stringCalculation.add("1"));
+        assertEquals(6, stringCalculation.add("1,5"));
     }
 }
